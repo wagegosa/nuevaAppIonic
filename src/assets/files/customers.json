@@ -1,0 +1,24 @@
+{
+    "data":
+    [
+        {
+            "name": "Han",
+            "state": "look, kid...",
+            "description": "I've go enough on my plate as it is, and i...",
+            "img": "Han.jpg"
+        },
+        {
+            "name": "Anastasia",
+            "state": "Girl...",
+            "description": "i like live",
+            "img": "Anastasia.jpg"
+        },
+        {
+            "name": "Carla",
+            "state": "Girl...",
+            "description": "I like History",
+            "img": "carla.jpg"
+        }
+        
+    ]
+}

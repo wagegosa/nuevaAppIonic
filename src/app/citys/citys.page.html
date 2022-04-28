@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>City's</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" *ngFor="let city of citys">
+      <ion-card (click)="presentAlet2()">
+      <!-- <ion-card (click)="presentToast1()"> -->
+        <img src="../../assets/img/{{ city.img }}" alt="{{ city.name }}">
+        <div class="card-title">{{ city.name }}</div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-label *ngIf="!permission">No tienes permisos para esto.</ion-label>
+
+</ion-content>

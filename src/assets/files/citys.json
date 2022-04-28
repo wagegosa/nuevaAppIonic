@@ -1,0 +1,18 @@
+{
+    "data":
+    [
+        {
+            "name": "Bogotá",
+            "img": "city/bogota.jpg"
+        },
+        {
+            "name": "Rioacha",
+            "img": "city/riohacha.jpg"
+        },
+        {
+            "name": "Ibague",
+            "img": "city/ibague.jpg"  
+        }
+        
+    ]
+}
