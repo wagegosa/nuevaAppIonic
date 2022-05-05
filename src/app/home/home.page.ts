@@ -24,7 +24,7 @@ export class HomePage implements OnInit {
       this.code = barcodeData.text;
       console.log('Barcode data', this.code);
      }).catch(err => {
-         console.log('Error', err);
+         console.log('Error: ', err);
      });
   }
 
