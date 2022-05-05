@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
+// Scanner QR
+import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx'
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [{ 
+  providers: [
+    BarcodeScanner,
+    { 
     provide: RouteReuseStrategy, 
-    useClass: IonicRouteStrategy 
+    useClass: IonicRouteStrategy,
   }],
   bootstrap: [AppComponent],
 })

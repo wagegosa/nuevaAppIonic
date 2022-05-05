@@ -2,16 +2,22 @@
     "data":
     [
         {
+            "id": 1,
             "name": "Bogotá",
-            "img": "city/bogota.jpg"
+            "img": "city/bogota.jpg",
+            "description": "Tiene una longitud de 33 km de sur a norte, y 16 km de oriente a occidente.​ Como capital, alberga los organismos de mayor jerarquía de la rama ejecutiva (Presidencia de la República), legislativa (Congreso de Colombia) y judicial (Corte Suprema de Justicia, Corte Constitucional,"
         },
         {
+            "id": 2,
             "name": "Rioacha",
-            "img": "city/riohacha.jpg"
+            "img": "city/riohacha.jpg",
+            "description": "Riohacha, located alongside a desert and at the gateway to the Caribbean Sea, is a port of entry to La Guajira peninsula, the northernmost department of Colombia. This city, situated on the Ranchería River, was founded on August 6, 1545."
         },
         {
+            "id": 3,
             "name": "Ibague",
-            "img": "city/ibague.jpg"  
+            "img": "city/ibague.jpg"  ,
+            "description": "Ibagué is the capital city of the Tolima department. It is located on the eastern slopes of the Cordillera Central and known as the musical city of Colombia, due to its famous conservatory. At 1250m above sea-level, it has a spring-like climate."
         }
         
     ]

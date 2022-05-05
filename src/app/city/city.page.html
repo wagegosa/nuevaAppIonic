@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>{{ name }} City</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" class="imgCity">
+      <ion-card>
+        <img src="../../assets/img/{{ img }}" alt="{{ name }}">
+      </ion-card>
+    </ion-col>
+	<div>
+        <div class="description">{{ description }}</div>
+      </div>
+  </ion-row>
+
+  <ion-label *ngIf="!permission">No tienes permisos para esto.</ion-label>
+
+</ion-content>

@@ -15,6 +15,8 @@ export class CitysPage implements OnInit {
 
   citys: any = [];
   permission: boolean;
+
+  token = localStorage.getItem('token');
   constructor(
     private router: Router,
     private http: HttpClient,
@@ -24,9 +26,14 @@ export class CitysPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log("token is: ",this.token);
+    // Borra el token
+    // localStorage.removeItem('token'),
+    // Borra todo el localStorage
+    localStorage.clear(),
     this.getCitys().subscribe(res => {
       this.permission = true;
-      console.log("Res: ", res)
+      // console.log("Res: ", res)
       this.citys = res;
     });
   }

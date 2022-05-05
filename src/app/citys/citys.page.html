@@ -8,7 +8,8 @@
 
   <ion-row>
     <ion-col sizeLg="6" sizeMd="6" sizeXs="12" *ngFor="let city of citys">
-      <ion-card (click)="presentAlet2()">
+      <ion-card [routerLink]="['/city', city.id]">
+      <!-- <ion-card (click)="presentAlet2()"> -->
       <!-- <ion-card (click)="presentToast1()"> -->
         <img src="../../assets/img/{{ city.img }}" alt="{{ city.name }}">
         <div class="card-title">{{ city.name }}</div>

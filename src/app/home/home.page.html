@@ -3,9 +3,14 @@
     <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content>
-  
+
+  <ion-toolbar>
+    <ion-button color="primary" (click)="scan()">Scannear</ion-button>
+  </ion-toolbar>
+  {{code}}
+
   <ion-grid>
     <ion-row>
       <ion-col sizeLg="4" sizeMd="4" sizeSm="6" sizeXs="6">

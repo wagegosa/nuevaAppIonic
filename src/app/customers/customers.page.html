@@ -2,11 +2,19 @@
   <ion-toolbar color="mycolor">
     <ion-title>Customers</ion-title>
   </ion-toolbar>
+  <ion-toolbar color="mycolor">
+    <ion-searchbar placeholder="Buscar" animated (ionChange)="searchCustomers($event)"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content refreshingSpinner="crescent"></ion-refresher-content>
+  </ion-refresher>
+
   <ion-list *ngIf="permission">
-    <ion-item *ngFor="let user of users">
+    <ion-item *ngFor="let user of searchedUser">
       <ion-avatar slot="start">
         <img src="../../assets/img/{{user.img}}" alt="{{user.name}}">
       </ion-avatar>
